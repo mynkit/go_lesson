@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"go_lesson/section14/config"
+	"go_lesson/section14/utils"
+	"log"
 )
 
 func main() {
-	fmt.Println("vim-go")
-	fmt.Println(config.Config.ApiKey)
-	fmt.Println(config.Config.ApiSecret)
+	utils.LoggingSettings(config.Config.LogFile)
+	log.Println("test")
 }
